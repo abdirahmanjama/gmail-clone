@@ -1,0 +1,14 @@
+.emailList {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    overflow: scroll;
+}
+
+.settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}

@@ -16,26 +16,30 @@ import {
 
 function App() {
   return (
-    <div className="App">
+   
       <Router>
-        <Header/>
-
-        <div className="app__body">
-          <Switch>
-            <Route path = "/mail">
-              <Mail/>
-            </Route>
-            <Route path ="/">
-              <EmailList/>
-            </Route>
-          </Switch>
-        </div>
-        <Sidebar/>
-      </Router>
-     
+         <div className="App">
+            <Header/>
+        
+            <div className="app__body">
+            <Sidebar/>
+              <Switch>
+                <Route path = "/mail">
+                  <Mail/>
+                </Route>
+                <Route path ="/">
+                  <EmailList/>
+                </Route>
+              </Switch>
+              
+            </div>
+            
+           </div>
+        </Router>
+      
 
  
-    </div>
+   
   );
 }
 
