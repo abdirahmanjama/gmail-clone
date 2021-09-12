@@ -35,9 +35,10 @@
 .sidebarOption--active > p,
 .sidebarOption--active > h3, 
 .sidebarOption--active {
-    background-color: whitesmoke;
-    color: orange;
+    background-color: #fcecec ;
+    color: rgb(199,22,16);
     font-weight: 800 !important;
+
 }
 
 .sidebarOption--active > p {
