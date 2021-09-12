@@ -1,9 +1,10 @@
 import React from 'react'
 import './SidebarOption.css'
 
-function SidebarOption({title, number, Icon}) {
+function SidebarOption({title, number, Icon, selected}) {
     return (
-        <div className = "sidebarOption">
+        
+        <div className ={`sidebarOption ${selected && "sidebarOption--active"}`}>
             <Icon/>
             <h3>{title}</h3>
             <p>{number}</p>

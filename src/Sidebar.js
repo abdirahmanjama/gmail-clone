@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Sidebar.css'
 import AddIcon from '@material-ui/icons/Add';
 import { Button } from '@material-ui/core';
@@ -8,7 +8,15 @@ import { ImportantDevices, LabelImportant, Snooze, StarRounded } from '@material
 import SendIcon from '@material-ui/icons/Send';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
+
+
 function Sidebar() {
+    const [selected, setSelected] = useState(false);
+
+    function handleClick(){
+        setSelected(!selected);
+    }
+
     return (
         <div className="sidebar">
             <div className="sidebar__top">
@@ -20,8 +28,8 @@ function Sidebar() {
                 </Button>
             </div>
             <div className="sidebar__middle">
-                <SidebarOption Icon={InboxIcon} title="Inbox" number = {54}/>
-                <SidebarOption Icon={StarRounded} title="Starred" number = {1}/>
+                <SidebarOption Icon={InboxIcon}  title="Inbox" number = {54}/>
+                <SidebarOption Icon={StarRounded} selected={true} title="Starred" number = {1}/>
                 <SidebarOption Icon={Snooze} title="Snooze" number = {1}/>
                 <SidebarOption Icon={LabelImportant} title="Important" number = {1}/>
                 <SidebarOption Icon={SendIcon} title="Sent" number = {1}/>
