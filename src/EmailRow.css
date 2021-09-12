@@ -1,0 +1,9 @@
+.emailRow {
+    display: flex;
+    align-items: center;
+   
+}
+
+.emailRow__options {
+    align-items: flex-start;
+}
