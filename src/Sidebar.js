@@ -3,6 +3,7 @@ import './Sidebar.css'
 import AddIcon from '@material-ui/icons/Add';
 import { Button } from '@material-ui/core';
 import InboxIcon from '@material-ui/icons/Inbox';
+import SidebarOption from './SidebarOption';
 
 function Sidebar() {
     return (
@@ -16,7 +17,7 @@ function Sidebar() {
                 </Button>
             </div>
             <div className="sidebar__middle">
-                <SidebarOption Icon={<InboxIcon/>} title="Inbox" number = {54}/>
+                <SidebarOption Icon={InboxIcon} title="Inbox" number = {54}/>
             </div>
             <div className="sidebar__bottom">
 
